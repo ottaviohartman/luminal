@@ -24,6 +24,8 @@ as-any = "0.3.1"
 
 [dev-dependencies]
 dfdx = { version = "0.13", features = ["f16"] }
+criterion = { version = "0.5", features = ["html_reports"] }
+
 
 [workspace]
 members = [
@@ -33,3 +35,7 @@ members = [
     "crates/luminal_training",
 ]
 exclude = ["crates/luminal_metal", "crates/luminal_cuda"]
+
+[[bench]]
+name = "my_benchmark"
+harness = false

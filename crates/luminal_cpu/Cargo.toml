@@ -14,3 +14,8 @@ rustc-hash = "1.1.0"
 [dev-dependencies]
 rand = "0.8.5"
 dfdx = { version = "0.13", features = ["f16"] }
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "my_benchmark"
+harness = false
