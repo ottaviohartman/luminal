@@ -1,4 +1,4 @@
-use criterion::{criterion_group, criterion_main, Criterion};
+use codspeed_criterion_compat::{criterion_group, criterion_main, Criterion};
 use dfdx::{tensor::TensorFromVec, tensor_ops::TryMatMul};
 use luminal::{prelude::*, tests::random_vec_rng};
 use luminal_cpu::CPUCompiler;
