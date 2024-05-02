@@ -26,7 +26,7 @@ fn bench_matmul() {
 
                 let d_a = d_dev.tensor_from_vec(a_data, (m, k));
                 let d_b = d_dev.tensor_from_vec(b_data, (k, n));
-                let d_c = d_a.matmul(d_b);
+                let _= d_a.matmul(d_b);
 
                 c.drop();
             }
